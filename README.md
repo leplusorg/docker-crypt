@@ -10,28 +10,28 @@ Docker container to cipher/decipher/sign data (gnupg, openssl...).
 
 ## Example without using the filesystem
 
-Let's say that you have a file `foo.txt` in your current working directory that you want to encrypt with a key file `key.txt`:
+Let's say that you have a file `foo.txt` in your current working directory that you want to encrypt with a public key `age1u9wu5f2eajlqluhra0jx6qxjeyyr2jygh6vguacrp9pd63kljsesam7cg7`:
 
 **Mac/Linux**
 
 ```bash
-cat foo.txt | docker run --rm -i --net=none leplusorg/crypt age -c - > foo.txt.gz
+cat foo.txt | docker run --rm -i --net=none leplusorg/crypt age --recipient age1u9wu5f2eajlqluhra0jx6qxjeyyr2jygh6vguacrp9pd63kljsesam7cg7 > foo.age
 ```
 
 **Windows**
 
 ```batch
-type foo.txt | docker run --rm -i --net=none leplusorg/crypt age -c - > foo.txt.gz
+type foo.txt | docker run --rm -i --net=none leplusorg/crypt age --recipient age1u9wu5f2eajlqluhra0jx6qxjeyyr2jygh6vguacrp9pd63kljsesam7cg7 > foo.age
 ```
 
 ## Example using the filesystem
 
-Same thing, assuming that you have a file `foo.txt` in your current working directory that you want to crypt:
+Same thing, assuming that you have a file `foo.txt` in your current working directory that you want to encrypt with a public key `age1u9wu5f2eajlqluhra0jx6qxjeyyr2jygh6vguacrp9pd63kljsesam7cg7`:
 
 **Mac/Linux**
 
 ```bash
-docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/crypt age /tmp/foo.txt
+docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/crypt age --recipient age1u9wu5f2eajlqluhra0jx6qxjeyyr2jygh6vguacrp9pd63kljsesam7cg7 --output /tmp/foo.age /tmp/foo.txt
 ```
 
 **Windows**
@@ -39,13 +39,13 @@ docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplus
 In `cmd`:
 
 ```batch
-docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/crypt age /tmp/foo.txt
+docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/crypt age --recipient age1u9wu5f2eajlqluhra0jx6qxjeyyr2jygh6vguacrp9pd63kljsesam7cg7 --output /tmp/foo.age /tmp/foo.txt
 ```
 
 In PowerShell:
 
 ```pwsh
-docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/crypt age /tmp/foo.txt
+docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/crypt age --recipient age1u9wu5f2eajlqluhra0jx6qxjeyyr2jygh6vguacrp9pd63kljsesam7cg7 --output /tmp/foo.age /tmp/foo.txt
 ```
 
 ## Request new tool
