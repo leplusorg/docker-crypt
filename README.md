@@ -1,4 +1,4 @@
-# Cipher/deciper/sign
+# Cipher/decipher/sign
 
 Docker container to cipher/decipher/sign data (gnupg, openssl...).
 
