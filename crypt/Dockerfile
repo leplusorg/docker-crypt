@@ -12,7 +12,6 @@ ARG USER_GECOS=Default
 # hadolint ignore=DL3018
 RUN apk --update --no-cache add \
     age \
-    clevis \
     fscryptctl \
     gnupg \
     jose \
