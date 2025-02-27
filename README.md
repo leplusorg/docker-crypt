@@ -7,6 +7,8 @@ Docker container to cipher/decipher/sign data (gnupg, openssl...).
 [![Docker Stars](https://img.shields.io/docker/stars/leplusorg/crypt)](https://hub.docker.com/r/leplusorg/crypt)
 [![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/crypt)](https://hub.docker.com/r/leplusorg/crypt)
 [![Docker Version](https://img.shields.io/docker/v/leplusorg/crypt?sort=semver)](https://hub.docker.com/r/leplusorg/crypt)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/10083/badge)](https://bestpractices.coreinfrastructure.org/projects/10083)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/leplusorg/docker-crypt/badge)](https://securityscorecards.dev/viewer/?uri=github.com/leplusorg/docker-crypt)
 
 ## Example without using the filesystem
 
