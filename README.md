@@ -2,7 +2,7 @@
 
 Docker container to cipher/decipher/sign data (gnupg, openssl...).
 
-[![Dockerfile](crypt/Dockerfile)
+[![Dockerfile](https://img.shields.io/badge/GitHub-Dockerfile-blue)](crypt/Dockerfile)
 [![Docker Build](https://github.com/leplusorg/docker-crypt/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-crypt/actions?query=workflow:"Docker")
 [![Docker Stars](https://img.shields.io/docker/stars/leplusorg/crypt)](https://hub.docker.com/r/leplusorg/crypt)
 [![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/crypt)](https://hub.docker.com/r/leplusorg/crypt)
