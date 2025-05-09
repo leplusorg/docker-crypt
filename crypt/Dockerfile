@@ -14,7 +14,7 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 # hadolint ignore=DL3019
 RUN apk -U upgrade \
     && apk add \
-    age=1.2.1-r4 \
+    age=1.2.1-r5 \
     fscryptctl=1.2.0-r0 \
     gnupg=2.4.7-r0 \
     jose=13-r0 \
