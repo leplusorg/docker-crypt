@@ -20,7 +20,7 @@ RUN apk -U upgrade \
     jose=14-r0 \
     openssl=3.5.0-r0 \
     py3-pip=25.1.1-r0 \
-    python3=3.12.10-r1 \
+    python3=3.12.11-r0 \
     xmlsec=1.3.7-r0 \
     && if apk -u list | grep -q -e . ; then \
       apk -u list ; \
