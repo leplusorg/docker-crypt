@@ -15,7 +15,9 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 RUN apk -U upgrade \
     && apk add \
     age=1.2.1-r5 \
+    curl=8.14.1-r0 \
     fscryptctl=1.2.0-r0 \
+    git=2.49.0-r0 \
     gnupg=2.4.7-r0 \
     jose=14-r0 \
     openssl=3.5.0-r0 \
