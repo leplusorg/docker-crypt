@@ -1,6 +1,6 @@
 # Cipher/decipher/sign
 
-Docker container to cipher/decipher/sign data (gnupg, openssl, age, jose, xmlsec...).
+Docker container with utilities to cipher/decipher/sign data (gnupg, openssl, age, jose, xmlsec...).
 
 [![Dockerfile](https://img.shields.io/badge/GitHub-Dockerfile-blue)](crypt/Dockerfile)
 [![Docker Build](https://github.com/leplusorg/docker-crypt/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-crypt/actions?query=workflow:"Docker")
