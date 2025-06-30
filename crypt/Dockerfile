@@ -16,7 +16,7 @@ RUN apk -U upgrade \
     && apk add \
     age=1.2.1-r5 \
     coreutils=9.7-r1 \
-    curl=8.14.1-r0 \
+    curl=8.14.1-r1 \
     fscryptctl=1.2.0-r0 \
     git=2.49.0-r0 \
     gnupg=2.4.7-r0 \
