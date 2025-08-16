@@ -4,4 +4,20 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: "sh -c '[ $$(id -u) -eq 1000 ] && gpg --version'"
+    command: |
+      sh -c '
+        set -euo pipefail
+        if [ $(id -u) -ne 1000 ]; then
+          exit 1
+        fi
+        age --version # age
+        base64 --version # coreutils
+        curl --version # curl
+        fscryptctl --version # fscryptctl
+        git --version # git
+        gpg --version # gnupg
+        openssl --version # openssl
+        pip --version # py3-pip
+        python --version # python3
+        xmlsec1 --version # xmlsec
+      '
