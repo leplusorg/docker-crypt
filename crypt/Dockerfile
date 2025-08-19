@@ -21,7 +21,7 @@ RUN apk -U upgrade \
     git=2.49.1-r0 \
     gnupg=2.4.7-r0 \
     jose=14-r0 \
-    openssl=3.5.1-r0 \
+    openssl=3.5.2-r0 \
     py3-pip=25.1.1-r0 \
     python3=3.12.11-r0 \
     xmlsec=1.3.7-r0 \
