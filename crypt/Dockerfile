@@ -13,15 +13,15 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
 RUN apk upgrade --no-cache \
     && apk add --no-cache \
-    age=1.2.1-r9 \
-    coreutils=9.7-r1 \
-    curl=8.14.1-r2 \
-    fscryptctl=1.2.0-r0 \
-    git=2.49.1-r0 \
-    gnupg=2.4.7-r0 \
+    age=1.2.1-r10 \
+    coreutils=9.8-r1 \
+    curl=8.17.0-r1 \
+    fscryptctl=1.3.0-r0 \
+    git=2.52.0-r0 \
+    gnupg=2.4.8-r1 \
     jose=14-r0 \
     openssl=3.5.4-r0 \
-    py3-pip=25.1.1-r0 \
+    py3-pip=25.1.1-r1 \
     python3=3.12.12-r0 \
     xmlsec=1.3.7-r0 \
     && apk cache --no-cache clean \
