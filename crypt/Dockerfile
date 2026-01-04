@@ -18,7 +18,7 @@ RUN apk upgrade --no-cache \
     curl=8.17.0-r1 \
     fscryptctl=1.3.0-r0 \
     git=2.52.0-r0 \
-    gnupg=2.4.8-r1 \
+    gnupg=2.4.9-r0 \
     jose=14-r0 \
     openssl=3.5.4-r0 \
     py3-pip=25.1.1-r1 \
