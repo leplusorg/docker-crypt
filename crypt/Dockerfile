@@ -22,7 +22,7 @@ RUN apk upgrade --no-cache \
     jose=14-r0 \
     openssl=3.5.6-r0 \
     py3-pip=25.1.1-r1 \
-    python3=3.12.12-r0 \
+    python3=3.12.13-r0 \
     xmlsec=1.3.9-r0 \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
