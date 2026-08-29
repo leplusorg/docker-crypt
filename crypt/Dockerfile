@@ -20,7 +20,7 @@ RUN apk upgrade --no-cache \
     git=2.54.0-r0 \
     gnupg=2.4.9-r1 \
     jose=14-r0 \
-    openssl=3.5.7-r0 \
+    openssl=3.5.8-r0 \
     py3-pip=26.1.2-r0 \
     python3=3.14.7-r1 \
     xmlsec=1.3.11-r0 \
