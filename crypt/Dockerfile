@@ -13,7 +13,7 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
 RUN apk upgrade --no-cache \
     && apk add --no-cache \
-    age=1.3.1-r5 \
+    age=1.3.1-r6 \
     coreutils=9.11-r0 \
     curl=8.22.0-r0 \
     fscryptctl=1.3.0-r0 \
