@@ -15,7 +15,7 @@ RUN apk upgrade --no-cache \
     && apk add --no-cache \
     age=1.3.2-r1 \
     coreutils=9.11-r0 \
-    curl=8.22.0-r0 \
+    curl=8.23.0-r0 \
     fscryptctl=1.3.0-r0 \
     git=2.54.0-r0 \
     gnupg=2.4.9-r1 \
