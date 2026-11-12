@@ -17,7 +17,7 @@ RUN apk upgrade --no-cache \
     coreutils=9.11-r0 \
     curl=8.23.0-r0 \
     fscryptctl=1.3.0-r0 \
-    git=2.54.0-r0 \
+    git=2.54.1-r0 \
     gnupg=2.4.9-r1 \
     jose=14-r0 \
     openssl=3.5.9-r0 \
